@@ -19,7 +19,6 @@ interface CVTimelineProps {
   data: CVItem[];
 }
 
-// 动画定义
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
   show: (delay = 0) => ({
@@ -41,26 +40,23 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
       }}
       className="relative"
     >
-      {/* 标题淡入 */}
       <motion.h2
         className="text-2xl font-bold mb-8 text-gray-900"
         variants={fadeUp}
-        custom={0}
       >
         {title}
       </motion.h2>
 
-      <div className="space-y-12 relative">
+      <div className="space-y-10 relative">
         {data.map((item, idx) => (
           <motion.div
             key={`${item.company}-${idx}`}
-            className="relative grid grid-cols-[160px_1fr] gap-6 md:gap-8"
+            className="relative grid md:grid-cols-[160px_1fr] gap-4 md:gap-8"
             variants={fadeUp}
             custom={0.1 + idx * 0.1}
           >
-            {/* ===== 左列（时间 + 圆点 + 竖线） ===== */}
-            <div className="relative flex justify-end pr-4">
-              {/* 时间标签淡入 */}
+            {/* ===== 左侧时间轴（桌面端） ===== */}
+            <div className="relative hidden md:flex justify-end pr-4">
               <motion.div
                 className="bg-[#c0e3e7]/40 text-gray-800 mt-4 text-sm font-medium px-3 py-1 rounded-md w-fit h-fit whitespace-nowrap shadow-sm cursor-default"
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -70,15 +66,10 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
                   transition: { duration: 0.3, delay: 0.1 + idx * 0.05 },
                 }}
                 viewport={{ once: true }}
-                whileHover={{
-                  scale: 1.01,
-                  boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
-                }}
               >
                 {item.start} - {item.end}
               </motion.div>
 
-              {/* 动态圆点 */}
               <motion.div
                 className="absolute top-[24px] -right-[7px] w-3 h-3 bg-gray-700 rounded-full z-10"
                 initial={{ scale: 0, opacity: 0 }}
@@ -90,7 +81,6 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
                 viewport={{ once: true }}
               ></motion.div>
 
-              {/* 动态竖线 */}
               {idx !== data.length - 1 && (
                 <motion.div
                   className="absolute left-[calc(100%)] top-[32px] w-[2px] bg-gray-200 origin-top"
@@ -105,12 +95,19 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
               )}
             </div>
 
-            {/* ===== 右列（内容卡片） ===== */}
+            {/* ===== 内容卡片 ===== */}
             <motion.div
-              className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 md:p-6 hover:shadow-md transition-all duration-300"
               variants={fadeUp}
               custom={0.15 + idx * 0.1}
             >
+              {/* 移动端显示时间标签 */}
+              <div className="md:hidden flex items-center justify-between mb-3">
+                <span className="bg-[#c0e3e7]/40 text-gray-800 text-xs font-medium px-2 py-[2px] rounded-md">
+                  {item.start} - {item.end}
+                </span>
+              </div>
+
               <div className="font-semibold text-gray-900 text-base">
                 {item.company} ·{" "}
                 <span className="text-gray-600">{item.city}</span>
@@ -132,7 +129,6 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
                 </motion.div>
               )}
 
-              {/* 职责列表 */}
               <motion.ul
                 className="mt-2 space-y-1 text-sm text-gray-600"
                 variants={{
