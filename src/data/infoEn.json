@@ -1,0 +1,181 @@
+{
+  "hello": "I'm Hs OR Call me Herbert",
+  "description": "Full-stack engineer with 7+ years of hands-on experience building scalable systems and Web3 applications using React, Next.js, Python, and Go. With an MSc in Applied Mathematics from SFU, I bring analytical depth, fast learning, and strong problem-solving ability to every project. Experienced in LLM systems, real-time architectures, and on-chain analytics. I care deeply about clean architecture, performance optimization, and code quality. Passionate about crafting reliable, production-grade interfaces and backend services that bridge AI and blockchain technologies through precise engineering and thoughtful design.",
+  "personalInformation": [
+    {
+      "label": "Full Name",
+      "value": "Herbert HE"
+    },
+    {
+      "label": "Address",
+      "value": "Vancouver, BC"
+    },
+    {
+      "label": "E-mail",
+      "value": "bolong@hhe.by"
+    }
+  ],
+  "language": [
+    {
+      "label": "Chinese (Mandarin)",
+      "score": 10,
+      "value": "native"
+    },
+    {
+      "label": "English",
+      "score": 8,
+      "value": "fluent"
+    }
+  ],
+  "professionalSkills": [
+    {
+      "label": "Frontend",
+      "score": 90,
+      "tags": ["React.js", "Next.js", "TypeScript", "TailwindCSS"]
+    },
+    {
+      "label": "Backend",
+      "score": 85,
+      "tags": ["Python", "FastAPI", "Node.js", "Go"]
+    },
+    {
+      "label": "Database & Infra",
+      "score": 80,
+      "tags": ["MySQL", "PostgreSQL", "Redis", "Docker", "AWS"]
+    },
+    {
+      "label": "AI / LLM Systems",
+      "score": 88,
+      "tags": [
+        "LangChain",
+        "Pinecone",
+        "OpenAI API",
+        "RAG",
+        "FastAPI",
+        "LLM Agent",
+        "Deepgram"
+      ]
+    },
+    {
+      "label": "Web3 & Smart Contracts",
+      "score": 75,
+      "tags": [
+        "Solidity",
+        "Foundry",
+        "Hardhat",
+        "Ethers.js",
+        "wagmi",
+        "RainbowKit",
+        "TON Connect"
+      ]
+    }
+  ],
+  "additionalSkills": [
+    "Gatsby.js",
+    "GraphQL",
+    "MySQL",
+    "Redis",
+    "MongoDB",
+    "CouchDB/PouchDB",
+    "Neo4j",
+    "RabbitMQ",
+    "Linux",
+    "macOS",
+    "Latex",
+    "Drools",
+    "MatLab",
+    "TensorFlow",
+    "and more..."
+  ],
+  "styledList": [
+    "Powerful Learning Ability",
+    "Effective Time Management Skill",
+    "Self Motivated",
+    "Abundant Problem-solving Experience"
+  ],
+  "workExperience": [
+    {
+      "start": "Nov 2023",
+      "end": "Present",
+      "company": "Newcast",
+      "city": "Remote",
+      "title": "Co-Founder",
+      "highlight": "Building the next generation of real-time voice agents — where AI reasoning meets human-like interaction.",
+      "responsibility": [
+        "Co-founded Newcast and led the technical direction, driving architecture design, rapid prototyping, and early product validation for real-time AI voice agents.",
+        "Built the initial MVP integrating LLM reasoning, speech streaming, and contextual memory, enabling natural, low-latency dialogue between users and agents.",
+        "Designed and implemented modular RAG and function-calling backends (LangChain + FastAPI + Pinecone) supporting dynamic API, database, and tool access.",
+        "Architected and deployed containerized microservices on AWS ECS with CI/CD automation, observability, and auto-scaling for multi-environment reliability.",
+        "Collaborated closely with product and GTM co-founders to align technical capabilities with market feedback and evolving user experience goals."
+      ]
+    },
+    {
+      "start": "Mar 2021",
+      "end": "Nov 2023",
+      "company": "KnowYourCustomer",
+      "city": "Remote",
+      "title": "Frontend Tech Lead",
+      "highlight": "",
+      "responsibility": [
+        "Led a team of frontend engineers in modernizing a legacy AML/KYC platform, driving migration to a unified component library and design system adopted across 5+ micro-apps.",
+        "Defined and implemented a scalable micro-frontend architecture using Webpack Module Federation, improving build isolation and deployment velocity.",
+        "Oversaw development of a custom UI toolkit (React + Tailwind + Storybook), enforcing code standards and reusable patterns across teams.",
+        "Established automated testing pipelines (Jest, Cypress) and review workflows, significantly improving release reliability and reducing regressions.",
+        "Collaborated cross-functionally with backend and DevOps leads to align API contracts, CI/CD processes, and release schedules for faster delivery."
+      ]
+    },
+    {
+      "start": "Feb 2020",
+      "end": "Mar 2021",
+      "company": "PwC Shanghai Acceleration Center",
+      "city": "Shanghai, China",
+      "title": "Senior Tech Lead",
+      "highlight": "",
+      "responsibility": [
+        "Led a team of engineers to build a full-stack analytics platform in TypeScript (Node.js + React), integrating D3.js and Google APIs for advanced business visualizations.",
+        "Architected modular backend services and reusable frontend components to enhance maintainability and development efficiency.",
+        "Established CI/CD pipelines and engineering standards to improve deployment consistency across teams.",
+        "Delivered end-to-end platform deployment for PwC internal analytics and reporting applications."
+      ]
+    },
+    {
+      "start": "Feb 2018",
+      "end": "Feb 2020",
+      "company": "3D Medicines Co., Ltd",
+      "city": "Shanghai, China",
+      "title": "Python Software Engineer",
+      "highlight": "3DMed Star Employee (Challenge the Impossible Award)",
+      "responsibility": [
+        "Architected an internal distributed bioinformatics computing system for large-scale genomic data processing and automated genetic testing report generation.",
+        "Developed NLP-driven context generators for clinical report drafting — an early prototype of task-specific AI agents in medical domains.",
+        "Designed and implemented Vue-based dashboards for real-time report visualization and quality control.",
+        "Dockerized services and established reproducible deployment workflows across research and production environments."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "start": "Sep 2015",
+      "end": "Dec 2017",
+      "company": "Simon Fraser University",
+      "city": "Vancouver",
+      "title": "Master in Applied Mathematics (Operation Research)",
+      "highlight": "SFU Graduate Fellowship 2016",
+      "responsibility": [
+        "Master Project: Analysis of Firefighter Absences and Hiring Schedule Optimization at the Surrey FireDepartment",
+        "Coursework: continuous/discrete optimization, network flows, linear programming, numerical methods incontinuous optimization, analytic number theory."
+      ]
+    },
+    {
+      "start": "Sep 2010",
+      "end": "Apr 2015",
+      "company": "York University",
+      "city": "Toronto",
+      "title": "Bachelor in Applied Mathematics",
+      "highlight": "Dean’s Honour Roll 2013 & 2014",
+      "responsibility": [
+        "Coursework: combinatorics, cryptography, simulation and Monte Carlo methods, financial mathematics."
+      ]
+    }
+  ]
+}
