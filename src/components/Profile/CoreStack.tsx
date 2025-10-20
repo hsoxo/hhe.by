@@ -81,7 +81,7 @@ const CoreStack = ({ stack }: { stack: Skill[] }) => {
               {skill.tags.map((tag) => (
                 <motion.span
                   key={tag}
-                  className="px-2 py-[1px] bg-[#f8f9fa] text-gray-700 border border-gray-200 text-[13px] rounded-full hover:bg-[#c0e3e7]/30 transition"
+                  className="px-2 py-[1px] bg-[#f8f9fa] text-gray-700 border border-gray-200 text-[13px] rounded-full hover:bg-[#c0e3e7]/30 transition cursor-default"
                   variants={{
                     hidden: { opacity: 0, y: 8 },
                     show: { opacity: 1, y: 0, transition: { duration: 0.3 } },

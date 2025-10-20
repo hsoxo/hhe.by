@@ -150,7 +150,7 @@ const Contact: React.FC = () => {
           <motion.button
             type="submit"
             disabled={loading}
-            className="flex items-center justify-center space-x-2 bg-[#c0e3e7] text-gray-900 px-5 py-2 rounded-full hover:shadow-md hover:bg-[#a8d7dc] transition"
+            className="flex items-center justify-center space-x-2 bg-[#c0e3e7] text-gray-900 px-5 py-2 rounded-full hover:shadow-md hover:bg-[#a8d7dc] transition cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >

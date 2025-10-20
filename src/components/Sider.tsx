@@ -86,7 +86,7 @@ const Sider = () => {
       {/* Download CV Button */}
       <motion.button
         onClick={() => window.open("/CV - Bolong He.pdf", "_blank")}
-        className="w-full bg-[#c0e3e7] text-gray-900 font-medium py-3 rounded-full flex items-center justify-center space-x-2 hover:bg-[#a8d7dc]"
+        className="w-full bg-[#c0e3e7] text-gray-900 font-medium py-3 rounded-full flex items-center justify-center space-x-2 hover:bg-[#a8d7dc] cursor-pointer"
         variants={fadeUp}
         custom={0.3}
         whileHover={{ scale: 1.03 }}
