@@ -62,14 +62,12 @@ const Profile = ({ data }: { data: ProfileData }) => {
         viewport={{ once: true }}
       />
 
-      {/* ===== Personal Info & Language ===== */}
       <motion.section
         className="grid grid-cols-1 md:grid-cols-2 gap-10"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
       >
-        {/* Info */}
         <motion.div variants={fadeUp} custom={0.1}>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">
             {isEn ? "Personal Information" : "个人信息"}
@@ -89,7 +87,6 @@ const Profile = ({ data }: { data: ProfileData }) => {
           </dl>
         </motion.div>
 
-        {/* Languages */}
         <motion.div custom={0.2}>
           <h3 className="text-lg font-semibold mb-4 text-gray-800">
             {isEn ? "Language" : "语言能力"}
@@ -106,7 +103,6 @@ const Profile = ({ data }: { data: ProfileData }) => {
                   <span className="text-sm text-gray-500">{e.value}</span>
                 </div>
 
-                {/* 圆点容器 */}
                 <motion.div
                   className="flex items-center"
                   variants={{
@@ -146,12 +142,10 @@ const Profile = ({ data }: { data: ProfileData }) => {
 
       <hr className="border-gray-100" />
 
-      {/* ===== Core Stack (自带动效) ===== */}
       <CoreStack stack={data.professionalSkills} />
 
       <hr className="border-gray-100" />
 
-      {/* ===== Styled List ===== */}
       <motion.section
         initial="hidden"
         whileInView="show"

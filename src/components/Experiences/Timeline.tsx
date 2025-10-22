@@ -47,7 +47,7 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
         {title}
       </motion.h2>
 
-      <div className="space-y-10 relative">
+      <div className="space-y-6 relative">
         {data.map((item, idx) => (
           <motion.div
             key={`${item.company}-${idx}`}
@@ -55,7 +55,6 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
             variants={fadeUp}
             custom={0.1 + idx * 0.1}
           >
-            {/* ===== 左侧时间轴（桌面端） ===== */}
             <div className="relative hidden md:flex justify-end pr-4">
               <motion.div
                 className="bg-[#c0e3e7]/40 text-gray-800 mt-4 text-sm font-medium px-3 py-1 rounded-md w-fit h-fit whitespace-nowrap shadow-sm cursor-default"
@@ -95,13 +94,11 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
               )}
             </div>
 
-            {/* ===== 内容卡片 ===== */}
             <motion.div
-              className="bg-white rounded-xl border border-gray-100 shadow-sm p-5 md:p-6 hover:shadow-md transition-all duration-300"
+              className="p-4 transition-all duration-300"
               variants={fadeUp}
               custom={0.15 + idx * 0.1}
             >
-              {/* 移动端显示时间标签 */}
               <div className="md:hidden flex items-center justify-between mb-3">
                 <span className="bg-[#c0e3e7]/40 text-gray-800 text-xs font-medium px-2 py-[2px] rounded-md">
                   {item.start} - {item.end}

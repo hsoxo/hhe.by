@@ -39,13 +39,11 @@ const CoreStack = ({ stack }: { stack: Skill[] }) => {
             variants={itemVariants}
             className="relative"
           >
-            {/* Skill header */}
             <div className="flex items-center justify-between mb-1">
               <span className="text-gray-800 font-medium">{skill.label}</span>
               <span className="text-xs text-gray-400">{skill.score}%</span>
             </div>
 
-            {/* Progress bar with animation */}
             <motion.div
               className="relative w-full h-[8px] bg-gray-100 rounded-full mb-2 overflow-hidden"
               initial={{ width: 0 }}
@@ -65,7 +63,6 @@ const CoreStack = ({ stack }: { stack: Skill[] }) => {
               />
             </motion.div>
 
-            {/* Tags */}
             <motion.div
               className="flex flex-wrap gap-1.5 mt-1"
               initial="hidden"

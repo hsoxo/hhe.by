@@ -22,7 +22,6 @@ const Sider = () => {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      {/* Avatar & Info */}
       <motion.div className="flex flex-col items-center" variants={fadeUp}>
         <div className="relative w-[160px] h-[160px] mb-4 border-[3px] border-[#c0e3e7] rounded-full overflow-hidden shadow-sm">
           <Image
@@ -50,7 +49,6 @@ const Sider = () => {
           Full-Stack Engineer
         </motion.p>
 
-        {/* Social Icons */}
         <motion.div
           className="flex justify-center space-x-6 mb-6"
           variants={fadeUp}
@@ -83,7 +81,6 @@ const Sider = () => {
         </motion.div>
       </motion.div>
 
-      {/* Download CV Button */}
       <motion.button
         onClick={() => window.open("/CV - Bolong He.pdf", "_blank")}
         className="w-full bg-[#c0e3e7] text-gray-900 font-medium py-3 rounded-full flex items-center justify-center space-x-2 hover:bg-[#a8d7dc] cursor-pointer"
