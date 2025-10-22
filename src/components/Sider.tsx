@@ -16,7 +16,7 @@ const fadeUp = {
 const Sider = () => {
   return (
     <motion.div
-      className="w-full max-w-sm bg-white shadow-md rounded-2xl p-6 text-center border border-gray-100"
+      className="w-full max-w-full lg:max-w-sm bg-white shadow-md rounded-2xl p-6 text-center border border-gray-100"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
