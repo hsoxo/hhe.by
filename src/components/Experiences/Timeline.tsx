@@ -95,7 +95,7 @@ const CVTimeline: React.FC<CVTimelineProps> = ({ title, data }) => {
             </div>
 
             <motion.div
-              className="p-4 transition-all duration-300"
+              className="p-4"
               variants={fadeUp}
               custom={0.15 + idx * 0.1}
             >
